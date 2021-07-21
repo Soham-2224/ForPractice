@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Animated Navbar</title>
+    <link rel="stylesheet" href="./stickynav.css">
+</head>
+<body>
+    <header>
+        <img src="./images/navbg.jpg" alt="" class="banner" />
+        <a href="#" class="logo">Brand.</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Animated Sticky NavBar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid eveniet iure tempore exercitationem quam laboriosam iste ipsum sapiente, similique nesciunt vitae placeat itaque, dolore dolorem maiores nemo suscipit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus quasi, eius, id nemo molestias facilis culpa harum placeat, asperiores beatae! Explicabo dolorum perspiciatis dolore, cumque voluptatum deleniti optio sapiente.<br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore hic, cumque totam ad perspiciatis molestias aut dolorum accusamus qui, magni ea facilis nesciunt obcaecati quidem numquam facere quaerat dolor. Eligendi nihil delectus minima cupiditate ducimus repudiandae aliquam possimus recusandae architecto culpa molestiae, aut tempore impedit, repellendus unde a facilis expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat, provident, expedita modi laborum libero sed alias explicabo quod, nostrum cupiditate error. Magnam, quia omnis aliquid libero mollitia, laudantium exercitationem, nulla nihil cupiditate repellat tenetur repudiandae autem ab eaque doloremque nostrum dolorum iure quas architecto accusamus dicta saepe. Fugit, laudantium! <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae cum ducimus facilis vel aliquam, reprehenderit nemo ratione alias blanditiis error officia sunt perspiciatis illo. Facere asperiores voluptates, ducimus obcaecati laudantium accusantium ipsum tempora mollitia itaque, id quas ea odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid eveniet iure tempore exercitationem quam laboriosam iste ipsum sapiente, similique nesciunt vitae placeat itaque, dolore dolorem maiores nemo suscipit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus quasi, eius, id nemo molestias facilis culpa harum placeat, asperiores beatae! Explicabo dolorum perspiciatis dolore, cumque voluptatum deleniti optio sapiente.<br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore hic, cumque totam ad perspiciatis molestias aut dolorum accusamus qui, magni ea facilis nesciunt obcaecati quidem numquam facere quaerat dolor. Eligendi nihil delectus minima cupiditate ducimus repudiandae aliquam possimus recusandae architecto culpa molestiae, aut tempore impedit, repellendus unde a facilis expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat, provident, expedita modi laborum libero sed alias explicabo quod, nostrum cupiditate error. Magnam, quia omnis aliquid libero mollitia, laudantium exercitationem, nulla nihil cupiditate repellat tenetur repudiandae autem ab eaque doloremque nostrum dolorum iure quas architecto accusamus dicta saepe. Fugit, laudantium! <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae cum ducimus facilis vel aliquam, reprehenderit nemo ratione alias blanditiis error officia sunt perspiciatis illo. Facere asperiores voluptates, ducimus obcaecati laudantium accusantium ipsum tempora mollitia itaque, id quas ea odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid eveniet iure tempore exercitationem quam laboriosam iste ipsum sapiente, similique nesciunt vitae placeat itaque, dolore dolorem maiores nemo suscipit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus quasi, eius, id nemo molestias facilis culpa harum placeat, asperiores beatae! Explicabo dolorum perspiciatis dolore, cumque voluptatum deleniti optio sapiente.<br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore hic, cumque totam ad perspiciatis molestias aut dolorum accusamus qui, magni ea facilis nesciunt obcaecati quidem numquam facere quaerat dolor. Eligendi nihil delectus minima cupiditate ducimus repudiandae aliquam possimus recusandae architecto culpa molestiae, aut tempore impedit, repellendus unde a facilis expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat, provident, expedita modi laborum libero sed alias explicabo quod, nostrum cupiditate error. Magnam, quia omnis aliquid libero mollitia, laudantium exercitationem, nulla nihil cupiditate repellat tenetur repudiandae autem ab eaque doloremque nostrum dolorum iure quas architecto accusamus dicta saepe. Fugit, laudantium! <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae cum ducimus facilis vel aliquam, reprehenderit nemo ratione alias blanditiis error officia sunt perspiciatis illo. Facere asperiores voluptates, ducimus obcaecati laudantium accusantium ipsum tempora mollitia itaque, id quas ea odio!</p>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', scrollY > 0);
+        })
+         
+        const navigation = document.querySelector('nav');
+        document.querySelector(".toggle").onclick = function() {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

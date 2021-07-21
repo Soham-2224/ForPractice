@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 1000px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    top: 0;
+    left: 0;
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+}
+header.sticky{
+    height: 80px;
+}
+header .banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+header.sticky .banner{
+    opacity: 0.6;
+}
+header .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: 1s;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    font-size: 15vw;
+    z-index: 1;
+}
+header.sticky .logo{
+    position: absolute;
+    font-size: 2em;
+    left: 100px;
+    transform: translate(0, -50%);
+    text-shadow: none;
+}
+nav{
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    transition: 0.25s;
+    transform: translateX(100px);
+    opacity: 0;
+}
+header.sticky nav ul{
+    transform: translateX(0);
+    transition-delay: 0.75s;
+    opacity: 1;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 200;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #fff;
+    
+}
+section{
+    margin-top: 50vh;
+    padding: 100px;
+}
+section h2{
+    font-size: 3em;
+}
+section p{
+    font-size: 1.2em;   
+}
+
+@media (max-width: 991px) {
+    section,
+    header{
+        padding: 40px;
+    }
+    section h2{
+        font-size: 2em;
+    }
+    header.sticky .logo{
+        left: 40px;
+    }
+    header.sticky .banner{
+        opacity: 0;
+    }
+    nav ul{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav.active ul{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        height: calc(100% - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s ease;
+    }
+    nav.active ul li a{
+        font-size: 1.5em;
+        border: none;
+        transition: transform 0.2s;
+    }
+    header.sticky nav ul{
+        opacity: 1;
+        visibility: visible;
+    }
+    nav.active ul li a:hover{
+        color: red;
+        transform: scale(1.1);
+    }
+    .toggle{
+        opacity: 0;
+        visibility: hidden;
+    }
+    header.sticky .toggle{
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: .5s;
+        transition-delay: 0.5s;
+        background: #fff;
+        opacity: 1;
+        visibility: visible;
+    }
+    .toggle::before{
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 7px;
+        width: 25px;
+        transition: 0.2s;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 7px 0 rgba(0, 0, 0, 0.7);
+    }
+    .toggle::after{
+        content: '';
+        position: absolute;
+        bottom: 12px;
+        left: 7px;
+        width: 25px;
+        height: 2px;
+        transition: 0.2s;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .toggle.active.toggle::before{
+    transform: rotate(45deg);
+    box-shadow: none;
+    top: 20px;
+    }
+    .toggle.active.toggle::after{
+        transform: rotate(-45deg);
+        bottom: 17.5px;
+    }
+}

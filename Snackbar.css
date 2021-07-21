@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.btn{
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(225deg,#ff3cac 0%,#784ba0 50%,#2b86c5 100%);
+    cursor: pointer;
+}
+.snackbar{
+    background: white;
+    color: black;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    padding: 10px 20px;
+    bottom: 40px;
+    z-index: 1;
+    visibility: hidden;
+}
+.snackbar.show{
+    visibility: visible;
+    animation: anim 0.5s, anim2 0.5s 1.5s;
+}
+@keyframes anim{
+    from{
+        bottom: 0; opacity: 0;
+    }
+    to{
+        bottom: 40px; opacity: 1;
+    }
+}
+@keyframes anim2{
+    from{
+        bottom: 40px; opacity: 1;
+    }
+    to{
+        bottom: 0; opacity: 0;
+    }
+}

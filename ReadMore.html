@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ReadMore.css">
+    <title>Read More functionality using js</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="./images/IMG1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile Develpoment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat magnam pariatur, ea eaque doloribus nemo et rem amet? Fuga ab doloremque quia libero debitis, veritatis vero repellendus iure blanditiis, labore mollitia dolores commodi voluptate laudantium eaque ipsum quas officiis distinctio hic perspiciatis molestiae impedit atque numquam praesentium. Illum sed voluptatem illo nisi quos quae soluta! Sunt numquam minima quibusdam!</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./images/IMG2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit quod pariatur error, similique, fuga nulla delectus nesciunt optio nisi vitae at quae hic sunt inventore perspiciatis! Odit voluptatem, ullam dignissimos ea magnam saepe eveniet ab perferendis et assumenda quas eligendi autem rerum nulla corrupti quod pariatur cupiditate beatae. Fuga voluptas dolorum a praesentium amet!</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./images/IMG3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Marketing & Communication</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste excepturi autem quibusdam atque laborum officia, voluptatibus quos sit aliquam totam libero ipsum quia dolore blanditiis nihil suscipit inventore similique labore placeat corporis laboriosam! Ab, minima! Natus id sit reiciendis architecto, mollitia vero blanditiis odit nobis tempore ut eius nostrum nam, rerum quos temporibus officia? Tenetur quasi repellat error quisquam, corrupti rerum labore laborum dignissimos harum?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0; i < more.length; i++) {
+            more[i].addEventListener('click',function(){
+                more[i].parentNode.classList.toggle('active');
+            })
+        }
+    </script>
+</body>
+</html>

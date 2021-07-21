@@ -1,0 +1,4 @@
+*.xml
+*.patch
+node_modules
+settings.json

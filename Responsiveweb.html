@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Responsiveweb.css">
+    <title>Responsiveweb</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Glass.</a>
+            <div class="toggle" onclick="menuToggle()"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>Hapiness...</h2><br><span>Crystal clear ocean water.</span>
+        </div>
+        <ul class="sci">
+            <li style="--i:1"><a href="#">Facebook</a></li>
+            <li style="--i:2"><a href="#">Twitter</a></li>
+            <li style="--i:3"><a href="#">Instagram</a></li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1"><a class="tilt" href="#">Home</a></li>
+            <li style="--i:2"><a class="tilt" href="#">About</a></li>
+            <li style="--i:3"><a class="tilt" href="#">Tour</a></li>
+            <li style="--i:4"><a class="tilt" href="#">Contact</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+       function menuToggle(){
+           const toggleMenu = document.querySelector('.toggle');
+           const section = document.querySelector('section');
+           toggleMenu.classList.toggle('active');
+           section.classList.toggle('active');
+
+       }
+    </script>
+
+</body>
+</html>

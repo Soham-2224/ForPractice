@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Top Navigation Bar</title>
+    <link rel="stylesheet" href="./AnimNav.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo.</a>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home"><h3>Home</h3></section>
+    <section id="about"><h3>About</h3></section>
+    <section id="services"><h3>Services</h3></section>
+    <section id="team"><h3>Team</h3></section>
+    <section id="portfolio"><h3>Portfolio</h3></section>
+    <section id="contact"><h3>Contact</h3></section>
+
+    <script>
+        const header = document.getElementById('header');
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+                toggle.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = () => {
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

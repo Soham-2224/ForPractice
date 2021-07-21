@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(44, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .card .imgbx,
+.container .card .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .card .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .contentBx::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+.container .card:hover .contentBx::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+.container .card .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .contentBx .content{
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-300px);
+    transition-delay: 0s;
+}
+.container .card:hover .contentBx .content{
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+.container .card .contentBx .content h3{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.container .card .contentBx .content p{
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: 300;
+}

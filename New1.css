@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #494beb;
+    position: relative;
+    flex-wrap: wrap;
+}
+.oval{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid white;
+    ;
+}
+.anim1{
+    animation-name: anim01 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim01{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(180deg);
+    }
+}
+
+.anim2{
+    animation-name: anim02 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim02{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(170deg);
+    }
+}
+
+.anim3{
+    animation-name: anim03 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim03{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(160deg);
+    }
+}
+
+.anim4{
+    animation-name: anim04 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim04{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(150deg);
+    }
+}
+
+.anim5{
+    animation-name: anim05;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim05{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(140deg);
+    }
+}
+
+.anim6{
+    animation-name: anim06;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim06{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(130deg);
+    }
+}
+
+.anim7{
+    animation-name: anim07 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim07{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(120deg);
+    }
+}
+
+.anim8{
+    animation-name: anim08 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim08{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(110deg);
+    }
+}
+
+.anim9{
+    animation-name: anim09 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim09{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(100deg);
+    }
+}
+
+.anim10{
+    animation-name: anim10 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim10{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(90deg);
+    }
+}
+
+.anim11{
+    animation-name: anim11 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim11{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(80deg);
+    }
+}
+
+.anim12{
+    animation-name: anim12 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim12{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(70deg);
+    }
+}
+
+.anim13{
+    animation-name: anim13 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim13{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(60deg);
+    }
+}
+
+.anim14{
+    animation-name: anim14 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim14{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(50deg);
+    }
+}
+
+.anim15{
+    animation-name: anim15 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim15{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(40deg);
+    }
+}
+
+.anim16{
+    animation-name: anim16 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim16{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(30deg);
+    }
+}
+
+.anim17{
+    animation-name: anim17 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim17{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(20deg);
+    }
+}
+
+.anim18{
+    animation-name: anim18 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim18{
+    50%{
+        border-radius: 50%;
+        height: 100px;
+        transform: rotate(10deg);
+    }
+}
