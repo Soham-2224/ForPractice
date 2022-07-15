@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./MyPortfolio.css" />
+      <title>My Portfolio</title>
+   </head>
+   <body>
+      <div class="dot"></div>
+      <div class="container">
+         <nav class="navigation">
+            <ul>
+               <li><a class="change" href="#Home">Home</a></li>
+               <li><a class="change" href="#About">About</a></li>
+               <li><a class="change" href="#Work">Work</a></li>
+               <li><a class="change" href="#Contact">Contact</a></li>
+            </ul>
+            <div class="line"></div>
+         </nav>
+         <div class="main">
+            <section id="Home" data-title="" class="hero__section">
+               <a href="#Home" class="logo">
+                  <img src="./images/MyLogo.svg" alt=""
+               /></a>
+               <div class="hero__container">
+                  <div class="container__imgbox">
+                     <span class="ring" style="--i: 0px"></span>
+                     <span class="ring" style="--i: 15px"></span>
+                     <span class="ring" style="--i: 35px"></span>
+                     <span class="ring" style="--i: 65px"></span>
+                     <span class="ring" style="--i: 105px"></span>
+                     <span class="ring" style="--i: 155px"></span>
+                     <span class="ring" style="--i: 215px"></span>
+                     <div class="imgBx">
+                        <img src="./images/men.jpg" alt="" />
+                     </div>
+                  </div>
+                  <div class="container__textbox">
+                     <h1>Namaste!</h1>
+                     <p>
+                        I'm <br />
+                        <span>Soham Bhosale</span>
+                     </p>
+                     <p>
+                        A <b>Creative,</b> <br />
+                        FrontEnd Developer
+                     </p>
+                  </div>
+               </div>
+            </section>
+            <section id="About" class="about__section">
+               <h1 class="title">Me</h1>
+               <div class="content"></div>
+               <div class="tools">
+                  <div class="line"></div>
+                  <div class="tool__container">
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                     <div><img src="" alt="toolsImg" /></div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+
+      <script>
+         const dot = document.querySelector('.dot');
+         document.addEventListener('mousemove', function (e) {
+            const dot = document.querySelector('.dot');
+            dot.style.left = e.pageX + 'px';
+            dot.style.top = e.pageY + 'px';
+         });
+         const navLinks = document.querySelectorAll('a');
+         navLinks.forEach(function (nav) {
+            nav.addEventListener('mouseover', function (e) {
+               dot.classList.add('active');
+            });
+            nav.addEventListener('mouseleave', function (e) {
+               dot.classList.remove('active');
+            });
+         });
+      </script>
+   </body>
+</html>
